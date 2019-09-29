@@ -124,6 +124,18 @@
 
 				});
 
+				/* FAQ */
+				const items = document.querySelectorAll(".accordion a");
+
+				function toggleAccordion(){
+  				this.classList.toggle('active');
+  				this.nextElementSibling.classList.toggle('active');
+				}
+
+				items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+				/* Body */
+
 		$body
 			.on('click', 'a[href="#menu"]', function(event) {
 
