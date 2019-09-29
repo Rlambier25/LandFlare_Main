@@ -71,7 +71,7 @@
 									<div class="content">
 										<h2 class="major">You've recieved an offer from us. Now what?</h2>
 										<p>If you received a letter and Purchase Agreement from us in the mail, we need to complete a few easy steps for you to get cash for your land.</p>
-										<a href="#" class="special">Learn more</a>
+										<a href="#nowWhat" class="special">Learn more</a>
 									</div>
 								</div>
 							</section>
@@ -90,7 +90,7 @@
 
 						<!-- Four -->
 							<section id="four" class="second wrapper alt style1">
-								<div class="inner">
+								<div id="nowWhat" class="inner">
 									<h2 class="major">I RECEIVED A LETTER. NOW WHAT?</h2>
 									<p>If you received a letter from us and signed the enclosed Purchase Agreement, congratulations! Here’s what to do next:</p>
 									<section class="features">
@@ -178,6 +178,23 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				$(function() {
+					$('a[href*="#"]:not([href="#"])').click(function() {
+						if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
+							{
+								var target = $(this.hash);
+								target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+								if (target.length) {
+									$('html, body').animate({
+										scrollTop: target.offset().top
+									}, 1000);
+									return false;
+								}
+							}
+					});
+				});
+			</script>
 
 	</body>
 </html>
