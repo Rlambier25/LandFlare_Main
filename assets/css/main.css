@@ -8,6 +8,10 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2113,8 +2117,8 @@ input, select, textarea {
   width: 48rem;
 }
 
-/* originally was h3 {} but it was causing issues with responsiveness so I trimmed out */
-/* .FAQ {
+/* Was causing issues with responsiveness so I trimmed out */
+/*  h3 {
   font-size: 1.75rem;
   color: #373d51;
   padding: 1.3rem;

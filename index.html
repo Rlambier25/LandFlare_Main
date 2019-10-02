@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Land Flare Equity Holdings</title>
@@ -33,8 +28,9 @@
 								<li><a href="index.html">Home</a></li>
 								<li><a href="About.html">About</a></li>
 								<li><a href="faq.html">FAQ</a></li>
+								<li><a href="#contactPage">Contact us</a></li>
 								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Sign Up</a></li>
+						<!--		<li><a href="#">Sign Up</a></li> -->
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
@@ -55,11 +51,11 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/about.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">About</h2>
-										<p>My name is Reed. I live in the Pacific Northwest and work as a software engineer. I created Land Flare as a side business so I can pursue my passion for real estate and help others fullfill their dreams of finding their dream property.</p>
-										<a href="About.html" class="special">Learn more</a>
+										<a href="#nowWhat" class="image"><img src="images/mail2.png" alt="" /></a>
+										<div class="content">
+											<h2 class="major">You've recieved an offer from us. Now what?</h2>
+											<p>If you received a letter and Purchase Agreement from us in the mail, we need to complete a few easy steps for you to get cash for your land.</p>
+											<a href="#nowWhat" class="special">Learn more</a>
 									</div>
 								</div>
 							</section>
@@ -67,26 +63,26 @@
 						<!-- Two -->
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/mail2.png" alt="" /></a>
+									<a href="About.html" class="image"><img src="images/about.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">You've recieved an offer from us. Now what?</h2>
-										<p>If you received a letter and Purchase Agreement from us in the mail, we need to complete a few easy steps for you to get cash for your land.</p>
-										<a href="#nowWhat" class="special">Learn more</a>
+										<h2 class="major">About</h2>
+										<p>My name is Reed. I'm a software engineer who is trying to pursue their passion for realestate. I created Land Flare as a side business so I can pursue my dream of buying and selling real estate in hopes of helping others find their dream homes. Checkout the About page for more info!</p>
+										<a href="About.html" class="special">Learn more</a>
 									</div>
 								</div>
 							</section>
 
-						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/fog_tree3.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">I'm still skeptical</h2>
-										<p>I understand. Trust is an important part of any real estate transaction, and we want you to feel comfortable doing business with us. Check out our FAQ section for some common questions about Titus Land Offers.</p>
-										<a href="faq.html" class="special">Learn more</a>
+							<!-- Three -->
+								<section id="three" class="wrapper spotlight style3">
+									<div class="inner">
+										<a href="faq.html" class="image"><img src="images/fog_tree3.jpg" alt="" /></a>
+										<div class="content">
+											<h2 class="major">I'm still skeptical</h2>
+											<p>I understand. Trust is an important part of any real estate transaction, and we want you to feel comfortable doing business with us. Check out our FAQ section for some common questions about Titus Land Offers.</p>
+											<a href="faq.html" class="special">Learn more</a>
+										</div>
 									</div>
-								</div>
-							</section>
+								</section>
 
 						<!-- Four -->
 							<section id="four" class="second wrapper alt style1">
@@ -129,22 +125,30 @@
 
 				<!-- Footer -->
 					<section id="footer">
-						<div class="inner">
+						<div id="contactPage" class="inner">
 							<h2 class="major">Get in touch</h2>
 							<p>If you didn’t get a letter from us, but you still want to sell your land, no problem! We purchase land in almost every county, in any condition.</p>
-							<form method="post" action="#">
+							<form name="contactform" method="post" action="contact-form-handler.php">
 								<div class="fields">
 									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<label for="first_name">First Name</label>
+										<input type="text" name="first_name" id="name" />
+									</div>
+									<div class="field">
+										<label for="last_name">Last Name</label>
+										<input type="text" name="last_name" id="name" />
+									</div>
+									<div class="field">
+										<label for="telephone">telephone</label>
+										<input type="tel" name="telephone" id="tel" />
 									</div>
 									<div class="field">
 										<label for="email">Email</label>
 										<input type="email" name="email" id="email" />
 									</div>
 									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
+										<label for="comments">Message</label>
+										<textarea name="comments" id="message" rows="4"></textarea>
 									</div>
 								</div>
 								<ul class="actions">
@@ -178,7 +182,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
+	<!--		<script>
 				$(function() {
 					$('a[href*="#"]:not([href="#"])').click(function() {
 						if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
@@ -194,7 +198,7 @@
 							}
 					});
 				});
-			</script>
+			</script> -->
 
 	</body>
 </html>
