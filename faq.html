@@ -33,7 +33,8 @@
 								<li><a href="index.html">Home</a></li>
 								<li><a href="About.html">About</a></li>
 								<li><a href="faq.html">FAQ</a></li>
-								<li><a href="elements.html">Elements</a></li>
+								<li><a href="#contactPage">Contact us</a></li>
+							<!--	<li><a href="elements.html">Elements</a></li> -->
 								<!--	<li><a href="#">Sign Up</a></li> -->
 							</ul>
 							<a href="#" class="close">Close</a>
@@ -45,7 +46,7 @@
 						<header>
 							<div class="inner">
 								<h2>You have questions. Excellent!</h2>
-								<p>I believe in full transparency. If your question isn't ansnwered by anything in the FAQ list below please don't hesitate to reach out to me using <a href=#footer>the contact info below</a> and I'll be happy to speak to any questions you may have.</p>
+								<p>I believe in full transparency. If your question isn't answered by anything in the FAQ list below please don't hesitate to reach out to me using <a href=#footer>the contact info below</a> and I'll be happy to speak to any questions you may have.</p>
 							</div>
 						</header>
 
@@ -83,7 +84,7 @@
 									    <div class="accordion-item">
 									      <a>Is this some elaborate scam?</a>
 									      <div class="content">
-									        <p>No! I care about earning your trust while we do business together. While we understand that you may be skeptical about responding to strangers who sent you a letter in the mail, we operate our business in a professional, courteous, and trustworthy manner. I really do want to buy your land. If you still don’t believe me, email Reed@landflare.com and I will prove to you that I am a real person with a genuine interest in real estate.</p>
+									        <p>No! I care about earning your trust while we do business together. While I understand that you may be skeptical about responding to strangers who sent you a letter in the mail, I operate my business in a professional, courteous, and trustworthy manner. I really do want to buy your land. If you still don’t believe me, email Reed@landflare.com and I will prove to you that I am a real person with a genuine interest in real estate.</p>
 									      </div>
 									    </div>
 									    <div class="accordion-item">
@@ -137,7 +138,7 @@
 											<div class="accordion-item">
 												<a>What do you do with all the land you purchase?</a>
 												<div class="content">
-													<p>Some of it we keep for personal use, but most of it we market and sell to targeted recreational users and developers. </p>
+													<p>Some of it I keep for personal use, but most of it I market and sell to targeted recreational users and developers. </p>
 												</div>
 											</div>
 									  </div>
@@ -149,47 +150,55 @@
 
 					</section>
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>If you didn’t get a letter from us, but you still want to sell your land, no problem! We purchase land in almost every county, in any condition.</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+					<!-- Footer -->
+						<section id="footer">
+							<div id="contactPage" class="inner">
+								<h2 class="major">Get in touch</h2>
+								<p>If you didn’t get a letter from us, but you still want to sell your land, no problem! We purchase land in almost every county, in any condition.</p>
+								<form name="contactform" method="post" action="contact-form-handler.php">
+									<div class="fields">
+										<div class="field">
+											<label for="first_name">First Name</label>
+											<input type="text" name="first_name" id="name" />
+										</div>
+										<div class="field">
+											<label for="last_name">Last Name</label>
+											<input type="text" name="last_name" id="name" />
+										</div>
+										<div class="field">
+											<label for="telephone">telephone</label>
+											<input type="tel" name="telephone" id="tel" />
+										</div>
+										<div class="field">
+											<label for="email">Email</label>
+											<input type="email" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="comments">Message</label>
+											<textarea name="comments" id="message" rows="4"></textarea>
+										</div>
 									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" /></li>
+									</ul>
+								</form>
+								<ul class="contact">
+									<li class="icon solid fa-home">
+										Untitled Inc<br />
+										1234 Somewhere Road Suite #2894<br />
+										Nashville, TN 00000-0000
+									</li>
+									<li class="icon solid fa-phone">(509) 551-1827</li>
+									<li class="icon solid fa-envelope"><a href="#">info@landflare.com</a></li>
+							<!--		<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
+									<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
+									<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li> -->
 								</ul>
-							</form>
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
-								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-							<!--	<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li> -->
-							</ul>
-							<ul class="copyright">
-								<li>&copy; LandFlare Inc. All rights reserved.</li></li>
-							</ul>
-						</div>
-					</section>
+								<ul class="copyright">
+									<li>&copy; Land Flare Inc. All rights reserved.</li>
+								</ul>
+							</div>
+						</section>
 
 			</div>
 
